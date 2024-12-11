@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea {
+    height: 1rem;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    height: auto;
+    field-sizing: content;
+}
+
+th {
+    border: 1px black solid;
+}
+
+td {
+    border: 1px black solid;
+    width: 100%;
+    padding: 0;
+}
+
+td > input{
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+#misc-item-text-container > textarea {
+    width: 90%;
+}
+
+/*
+#item-container > textarea {
+    text-align: center;
+    background: aqua;
+    border: none;
+    width: 40%;
+}*/
+
+@media only screen and (max-width: 600px) {
+    #character-sheet > div {
+        margin: 0;
+        min-width: 0;
+        width: 100vw;
+    }
+}
